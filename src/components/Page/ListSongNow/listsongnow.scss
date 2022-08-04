@@ -1,0 +1,17 @@
+.listsongnow{
+    padding: 74px 20px 14vh;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+
+    .listsongnow__header{
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .listsongnow__title{
+        color: #b3b3b3;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

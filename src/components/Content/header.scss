@@ -1,0 +1,202 @@
+.header{
+    height: 64px;
+    width: 82vw;
+    background-color: transparent;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    align-items: center;
+    padding-right: 36px;
+    transition: .2s;
+    z-index: 999;
+
+    &.spaceBetween{
+        justify-content: space-between;
+    }
+
+    &.flexEnd{
+        justify-content: flex-end;
+    }
+
+    &.background--black{
+        background-color: #000;
+    }
+
+    .header__btn{
+        padding: 16px 8px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            padding: 8px;
+            background-color: transparent;
+            border: 1px solid rgba(137, 137, 137, 0.841);
+            border-radius: 29px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: .2s;
+
+            &:hover{
+                background-color: #000;
+            }
+
+        }
+    }
+
+    .header__search{
+        height: 40px;
+        background-color: #fff;
+        border-radius: 25px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 25vw;
+        margin-left: 3vw;
+        font-size: 14px;
+
+        .header__search__icon{
+            position: absolute;
+            left: 0;
+            padding: 8px;
+        }
+
+        .header__search__input{
+            outline: none;
+            border: none;
+            border-radius: 30px;
+            margin-left: 36px;
+            width: 100%;
+        }
+
+        .header__search__dropDown{
+            position: absolute;
+            width: 100%;
+            z-index: 1000;
+            border-radius: 6px;
+            background-color: #fff;
+            top: 100%;
+            max-height: 300px;
+            overflow: scroll;
+
+            &.header__search__dropDown::-webkit-scrollbar{
+                display: none;
+            }
+            
+            .header__search__dropDown__box{
+                padding: 6px 4px;
+
+                .header__search__dropDown__item{
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 14px;
+                    font-weight: 600;
+                    word-wrap: break-word;
+                    width: 100%;
+                    display: flex;
+                    padding: 10px 8px;
+                    border-radius: 4px;
+    
+                    
+                    &:hover{
+                        background-color: rgb(227, 227, 227);
+                    }
+                }
+            }
+
+        }
+    }
+
+    .header__account{
+        display: flex;
+        align-items: center;
+        background-color: #282828;
+        transition: .2s;
+        border-radius: 20px;
+        position: relative;
+        cursor: pointer;
+        padding: 4px 0;
+        height: max-content;
+
+        .header__account__img{
+            object-fit: cover;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-left: 2px;
+        }
+
+        span{
+            margin: 0 12px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        svg{
+            fill: #fff;
+            margin-right: 4px;
+        }
+
+        .box{
+            position: absolute;
+            top: 120%;
+            right: 0;
+            background-color: #282828;
+            padding: 4px;
+
+            .box__item{
+                display: flex;
+                justify-content: space-between;
+                padding: 12px 0;
+                cursor: default;
+                font-size: 12px;
+                max-width: 350px;
+                min-width: 160px;
+
+                &:hover{
+                    background-color: hsla(0,0%,100%,.1);
+                }
+            }
+        }
+    }
+
+    .header__lib{
+        margin-left: 2vw;
+        display: flex;
+        align-items: center;
+
+        .header__lib__box{
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+
+            .header__lib__box__item{
+                text-decoration: none;
+                cursor: pointer;
+                color: #fff;
+                font-weight: 600;
+                font-size: 14px;
+                text-align: center;
+                padding: 8px 14px;
+                transition: .2s;
+                background-color: transparent;
+                border-radius: 4px;
+                margin-right: 8px;
+
+                
+
+                &.click{
+                    background-color: #333;
+                }
+
+                p{
+                    margin: 0;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}

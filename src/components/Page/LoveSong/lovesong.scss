@@ -1,0 +1,267 @@
+.loveSong{
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    .loveSongItem{
+        height: max-content;
+        padding: 74px 20px 0;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    
+        .loveSongItem__header{
+            display: flex;
+    
+            .loveSongItem__header__img{
+                height: 192px;
+                min-width: 192px;
+                width: 192px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #282828;
+                margin-right: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .loveSongItem__header__box{
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-between;
+    
+                .loveSongItem__header__box__name{
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 600;
+                    flex: 4;
+                    display: flex;
+                    align-items: flex-end;
+                }
+    
+                .loveSongItem__header__box__header{
+                    font-size: 36px;
+                    font-weight: 700;
+                    letter-spacing: -2px;
+                    cursor: pointer;
+                    flex: 1;
+                    margin: 16px 0;
+                }
+    
+                .loveSongItem__header__box__userName{
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    flex: 1;
+    
+                    
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .loveSongItems{
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(46,46,46,1) 0%, rgba(18,18,18,1) 92%, rgba(64,64,64,1) 98%, rgba(40,38,38,1) 100%, rgba(252,252,252,1) 100%, rgba(252,252,252,1) 100%, rgba(77,77,77,1) 100%, rgba(39,37,37,1) 100%);
+        height: max-content;
+        margin-top: 24px;
+        width: 100%;
+        padding-bottom: 66px;
+        padding: 24px 32px 120px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 60vh;
+
+        .loveSongItems__empty{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+
+            .artist__empty{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+                .artist__empty__icon{
+                    svg{
+                        fill: #fff;
+                        height: 64px;
+                        width: 64px;
+                    }
+                    margin-bottom: 10px;
+                }
+
+                .artist__empty__header{
+                    font-size: 26px;
+                    font-weight: 700;
+                }
+        
+                .artist__empty__text{
+                    margin-top: 4px;
+                    margin-bottom: 16px;
+                }
+        
+                .artist__empty__btn{
+                    margin-top: 16px;
+                    border-radius: 30px;
+                    padding: 16px 24px;
+                    background-color: #fff;
+                    color: #000;
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: .2s;
+        
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+        
+        
+            }
+        }
+
+        .loveSongItems__have{
+            .loveSongItems__have__btn{
+                display: flex;
+                align-items: center;
+                border-radius: 50%;
+                background-color: #1ed760;
+                padding: 14px;
+                width: max-content;
+                cursor: pointer;
+                margin-bottom: 28px;
+
+                &:hover{
+                    transform: scale(1.05);
+                }
+
+            }
+
+            display: flex;
+            flex-direction: column;
+
+            .loveSongItems__have__list{
+                display: flex;
+                border-radius: 4px;
+                padding: 4px 8px;
+                align-items: center;
+
+                &:hover{
+                    opacity: .8;
+                    background-color: hsla(0,0%,100%,.3)
+                }
+
+                .loveSongItems__have__list__box{
+                    display: flex;
+                    min-width: 50%;
+                    cursor: pointer;
+
+                    .loveSongItems__have__list__box__count{
+                        min-width: 4%;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .loveSongItems__have__list__box__img{
+                        position: relative;
+                        width: 40px;
+                        height: 40px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+
+                        svg{
+                            display: none;
+                            fill: #fff;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                    }
+
+                    .loveSongItems__have__list__box__text{
+                        margin-left: 12px;
+                        cursor: default;
+                        p{
+                            margin: 0;
+                        }
+
+                        .loveSongItems__have__list__box__text__song{
+                            font-size: 16px;
+                        }
+
+                        .loveSongItems__have__list__box__text__singer{
+                            font-size: 14px;
+                            color: #b3b3b3;
+                        }
+                    }
+                }
+
+                .loveSongItems__have__list__nameSong{
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    p{
+                        margin: 0;
+                    }
+                }
+
+                .loveSongItems__have__list__btn{
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-right: 8px;
+
+                    .loveSongItems__have__list__btn__box{
+                        border: 1px solid #fff;
+                        outline: none;
+                        border-radius: 24px;
+                        background-color: transparent;
+                        color: #fff;
+                        padding: 8px 16px;
+                        font-size: 14px;
+                        font-weight: 600;
+
+                        &:hover{
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    .loveSongItems__have__list__btn__icon{
+                        height: 100%;
+                        padding: 8px 12px;
+                        opacity: .6;
+                        cursor: pointer;
+                        color: #fff ;
+    
+    
+                        &:hover{
+                            opacity: 1;
+                            color: #1ed760;
+                        }
+                    }
+                }
+
+                &:hover .loveSongItems__have__list__box__img svg{
+                    display: block;
+                    color: #b3b3b3;
+                }
+            }
+        }
+    }
+}

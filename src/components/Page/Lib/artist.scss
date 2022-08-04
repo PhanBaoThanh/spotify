@@ -1,0 +1,52 @@
+.artist{
+    height: max-content;
+    width: 100%;
+    padding: 74px 20px 66px;
+    position: relative;
+    min-height: 100vh;
+
+    .artist__empty{
+        margin-top: -64px;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .artist__empty__icon{
+            svg{
+                fill: #fff;
+                height: 64px;
+                width: 64px;
+            }
+            margin-bottom: 10px;
+        }
+
+        .artist__empty__text{
+            margin-top: 4px;
+            margin-bottom: 16px;
+        }
+
+        .artist__empty__btn{
+            margin-top: 16px;
+            border-radius: 30px;
+            padding: 16px 24px;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .2s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+
+    }
+
+
+}

@@ -1,0 +1,74 @@
+.nav{
+    background-color: #000;
+    z-index: 999;
+    width: 18vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px 88px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    .nav__logo svg{
+        height: 40px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .nav__options{
+        width: 100%;
+        margin-top: 26px;
+        display: flex;
+        flex-direction: column;
+
+        &.bruh{
+            flex: 1;
+        }
+
+        &.bruh::-webkit-scrollbar{
+            display: none;
+        }
+
+        .nav__btn{
+            display: flex;
+            align-items: center;
+            outline: none;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            transition: .2s;
+            text-decoration: none;
+            cursor: pointer;
+            opacity: .6;
+            padding: 10px 0;
+
+            &.active{
+                opacity: 1;
+            }
+
+            &:hover{
+                opacity: 1;
+            }
+            
+            svg{
+                fill: #fff;
+                margin-right: 16px;
+            }
+
+            span{
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+        }
+    }
+
+    .nav__line{
+        height: 1px;
+        background-color: rgba(104, 104, 104, 0.342);
+        width: 100%;
+        margin-top: 8px;
+    }
+}

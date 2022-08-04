@@ -1,0 +1,151 @@
+.searchMusic{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    &.padding{
+        padding: 74px 20px 80px;
+    }
+
+    .searchMusic__header{
+        margin-top: 12px;
+        margin-bottom: 12px;
+        display: flex;
+
+        .searchMusic__header__btn{
+            padding: 6px 16px;
+            border-radius: 22px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            border: 2px solid #ccc;
+            margin-right: 16px;
+            cursor: pointer;
+            transition: .2s;
+            min-width: 80px;
+
+            &:hover{
+                background-color: #ccc;
+            }
+
+            &.actived{
+                border-color: #1db954;
+            }
+        }
+    }
+
+    .searchMusic__song{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+
+        .searchMusic__song__header{
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .searchMusic__artist__content{
+            display: flex;
+            flex-wrap: wrap;
+
+            .searchMusic__artist__content__box{
+                padding: 12px;
+                display: flex;
+                flex-direction: column;
+                color: #fff;
+                text-decoration: none;
+                cursor: pointer;
+                border: 1px solid rgb(77, 77, 77);
+                margin: 0 16px 16px 0;
+
+
+                &:hover{
+                    border-color: #1db954;
+                }
+
+
+                .searchMusic__artist__content__box__img{
+                    height: 140px;
+                    width: 140px;
+                    border-radius: 6px;
+                }
+
+                .searchMusic__artist__content__box__name h4{
+                    width: 140px;
+                    margin: 6px 0;
+                    word-wrap: break-word;
+                    font-size: 22px;
+                }
+
+                .searchMusic__artist__content__box__title{
+                    font-size: 14px;
+                    width: 140px;
+                    color: rgb(156, 156, 156);
+                }
+            }
+        }
+
+        .searchMusic__album__content{
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+
+            .searchMusic__album__content__box{
+                padding: 12px;
+                display: flex;
+                flex-direction: column;
+                color: #fff;
+                text-decoration: none;
+                cursor: pointer;
+                border: 1px solid rgb(77, 77, 77);
+                margin: 0 16px 16px 0;
+                position: relative;
+
+
+                &:hover{
+                    border-color: #1db954;
+                }
+
+
+                .searchMusic__album__content__box__img{
+                    height: 140px;
+                    width: 140px;
+                    border-radius: 6px;
+                }
+
+                .searchMusic__album__content__box__name h4{
+                    width: 140px;
+                    margin: 6px 0;
+                    word-wrap: break-word;
+                    font-size: 22px;
+                }
+
+                .searchMusic__album__content__box__title{
+                    font-size: 14px;
+                    width: 140px;
+                    color: rgb(156, 156, 156);
+                }
+
+                .body__content__item__icon{
+                    position: absolute;
+                    top: 50%;
+                    transition: .2s;
+                    background-color: #1ed760;
+                    border-radius: 50%;
+                    width: 48px;
+                    height: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    right: 10%;
+                    opacity: 0;
+                }
+    
+                &:hover .body__content__item__icon{
+                    transform: translateY(-50%);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

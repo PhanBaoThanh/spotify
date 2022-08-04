@@ -1,0 +1,15 @@
+.playlistLib{
+    min-height: 110vh;
+    height: max-content;
+    width: 100%;
+    padding: 74px 30px 66px 15px;
+    position: relative;
+
+    .playlist__box{
+        padding-top: 16px;
+        .playlist__header{
+            padding-left: 10px;
+        }
+    }
+
+}

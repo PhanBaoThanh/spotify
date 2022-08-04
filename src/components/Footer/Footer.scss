@@ -1,0 +1,157 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #282828;
+    background-color: #181818;
+    padding: 12px 0;
+
+    .footer__song{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 16px;
+        display: flex;
+        align-items: center;
+        min-width: 30vw;
+
+        .footer__song__mySong{
+            display: flex;
+            align-items: center;
+            margin-right: 16px;
+
+            img{
+                height: 56px;
+                width: 56px;
+                cursor: pointer;
+                margin-right: 12px;
+            }
+
+            .footer__song__mySong__name{
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: -1px;
+                cursor: pointer;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            .footer__song__mySong__singer{
+                font-size: 10px;
+                opacity: .6;
+                cursor: pointer;
+
+                &:hover{
+                    text-decoration: underline;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .footer__song__svg{
+            padding: 8px;
+            opacity: .6;
+            &:hover{
+                opacity: 1;
+            }
+            svg{
+                fill: #fff;
+            }
+        }
+    }
+
+    .footer__middle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 16px;
+
+        .footer__middle__btn{
+            display: flex;
+            align-items: center;
+
+            .footer__middle__btn__svg{
+                opacity: .6;
+                padding: 12px;
+                margin: 0 8px;
+
+                &:hover{
+                    opacity: 1;
+                }
+                svg{
+                    fill: #fff;
+                }
+
+                &.actived{
+                    color: #1db954;
+                    fill: #1db954;
+                    opacity: 1;
+                }
+            }
+
+            .footer__middle__btn__box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                margin: 0 8px;
+                transition: .2s;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .footer__middle__progress{
+            display: flex;
+            align-items: center;
+
+            .footer__middle__progress__now,
+            .footer__middle__progress__end{
+                font-size: 12px;
+                color: #ccc;
+                margin: 0 8px;
+                min-width: 30px;
+                text-align: center;
+            }
+
+            .footer__middle__progress__input{
+                width: 33vw;
+            }
+        }
+    }
+
+    .footer__end{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 16px;
+        display: flex;
+        align-items: center;
+
+        .footer__end__svg{
+            padding: 8px;
+            opacity: .6;
+
+            svg{
+                fill: #fff;
+            }
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    
+}
